@@ -1,0 +1,190 @@
+*{
+    margin: 0px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+.container{
+    background: url(../img/fondo1.jfif);
+    background-size: 100%;
+    max-width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    table-layout: fixed;
+}
+.col{
+    width: auto;
+}
+.header{
+    display: flex;
+    flex-flow: column nowrap;
+}
+    .menu{
+    background: rgba(80, 75, 75, 0.295);
+    display: flex;
+    flex-flow: row nowrap;
+    height: 100px;
+    align-items: center;
+    border-bottom: 3px solid rgba(255,255,255,.5);
+}
+    .logo{
+    flex: 1 1 auto;
+}
+    .logo a{
+        color: #fff;
+        font-size: 30px;
+    }
+    .logo a:hover{
+        color: #343434;
+    }
+    .nav{
+        font-family: 'Caveat', cursive;
+        flex: 5 1 auto;  
+        display: inline-flex; 
+}
+    .nav a{
+        color: #fff;
+        font-size: 15px;
+        text-transform: uppercase;
+        padding: 0 30px;
+        letter-spacing: 2px;
+    }
+    .nav a:hover{
+        color: #343434;
+    }
+    .social{
+    flex: 1 1 auto;
+    display: flex;
+}
+    .social a{
+        font-size: 18px;
+        color: #fff;
+        padding: 0 5 px;
+    }
+
+.section{
+    display:flex;
+}
+    .articulos{
+        background: rgba(80, 75, 75, 0.295);
+        flex: 1 1 auto;
+        display: flex;
+        flex-flow: row wrap;
+}
+    .article1{
+        flex: 1 1 50%;
+    }
+        img{
+            width: 100%;
+        }
+        .titulo{
+            background: rgba(80, 75, 75, 0.295);
+            color: white;
+            font-family: 'Caveat', cursive;
+            font-size: 30px;
+        }
+
+        .article1{
+            flex: 1 1 50%;
+        }
+        .article2{
+            flex: 1 1 100%;
+        }
+
+        .article3{
+            max-width: 30%;
+        }
+           /*  h1{
+            color: white;
+            font-family: 'Caveat', cursive;
+        } */
+            p{
+            font-family: 'Caveat', cursive; 
+        }
+    h3{
+        font-family:'Caveat', cursive;
+        font-size: 20px;
+        font-weight: normal;
+    }
+    .navegacion{
+        background: rgba(80, 75, 75, 0.295);
+        flex: 1 1 100%; 
+        text-align: center;
+        padding: 10 50px;
+    }
+    .navegacion a{
+        color: white;
+        font-size: 1.3vw;  
+        font-family: 'Caveat', cursive;
+    }
+    .navegacion a:hover{
+        color: #343434;
+    }
+
+    .header {
+        color: #36A0FF;
+        font-size: 27px;
+        padding: 10px;
+    }
+    
+    
+    .bigicon {
+        font-size: 35px;
+        color: #36A0FF;
+        
+    }
+.footer{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+    .pie{
+        background: rgba(80, 75, 75, 0.295);
+        width: 100%;
+}
+/* img{
+    display: flexbox;
+    width: 18%;
+    height: 18%;
+} */
+
+i.fab{
+    color: white;
+    font-size: 1.5vw;
+    text-align: center;
+    margin: 4px;
+}
+i.fab:hover{
+    color:#343434;
+}
+i.far{
+    color: white;
+    font-size: 1.5vw;
+    text-align: center;
+    margin: 4px;
+}
+i.far:hover{
+    color:#343434;
+}
+
+@media all and (max-width: 800px){
+        .section{
+            flex-direction: column;
+        }
+        .menu{
+            flex-direction: column;
+            height: auto;
+        }
+}
+@media all and (max-width: 600px){
+    .articulos{
+        flex-direction: column;
+    }
+}
+@media all and (max-width: 400px){
+    .articulos{
+        flex-direction: column;
+    }
+}
