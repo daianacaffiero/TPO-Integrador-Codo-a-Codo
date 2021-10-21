@@ -20,6 +20,45 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="estilos.css">
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+  document.getElementById("formulario").addEventListener('submit', validarFormulario); 
+});
+
+function validarFormulario(evento) {
+  evento.preventDefault();
+  var nombre = document.getElementById('nombre').value;
+  if(nombre.length == 0) {
+    alert('Complete el campo nombre');
+    return;
+  }
+  var apellido = document.getElementById('apellido').value;
+  if (apellido.length == 0) {
+    alert('Complete el campo apellido');
+    return;
+  }
+
+  var email = document.getElementById('email').value;
+    if (/^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$/.test(email)){
+        alert('La dirección de email'  + email + ' es correcta.');} 
+    else{
+        alert('La dirección de email es incorrecta.');
+        return;
+  }
+
+  var telefono = document.getElementById('telefono').value;
+  if (/^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/im.test(telefono)) {
+      alert('El numero de telefono ingresado es correcto');}
+    else{
+        alert('Ingrese un numero de telefono valido');
+    return;
+    }
+   
+  this.submit();
+}
+    </script>
+
 </head>
 
 <body>
@@ -39,6 +78,7 @@
         <a href="https://www.instagram.com/apolobarberservice" target="_blank"><i class="fab fa-instagram"></i></a>
         <a href="https://wa.me/message/UAKS5IGH5ZU5A1" target="_blank"><i class="fab fa-whatsapp"></i></a>
         <a href="https://www.apolobarberservice.com/turnos" target="_blank"><i class="far fa-calendar-alt"></i></a>
+        <a href="https://www.google.com/maps/place/Apolo+Barber+Service/@-38.0072734,-57.5599968,15z/data=!4m5!3m4!1s0x0:0x4b933fed27f310b3!8m2!3d-38.0072734!4d-57.5599968" target="_blank"><i class="fas fa-map-marker-alt"></i></a>
             </div>
         </div>
         
@@ -50,7 +90,7 @@
                     <div class="row">
                         <div class="col-md-12">
                             <div class="well well-sm">
-                                <form class="form-horizontal" method="post">
+                                <form id="formulario" class="form-horizontal" method="post">
                                     <fieldset>
                                         <legend class="text-center header">Contacto</legend>
                 
@@ -115,6 +155,7 @@
         <a href="https://www.instagram.com/apolobarberservice" target="_blank"><i class="fab fa-instagram"></i></a>
         <a href="https://wa.me/message/UAKS5IGH5ZU5A1" target="_blank"><i class="fab fa-whatsapp"></i></a>
         <a href="https://www.apolobarberservice.com/turnos" target="_blank"><i class="far fa-calendar-alt"></i></a>
+        <a href="https://www.google.com/maps/place/Apolo+Barber+Service/@-38.0072734,-57.5599968,15z/data=!4m5!3m4!1s0x0:0x4b933fed27f310b3!8m2!3d-38.0072734!4d-57.5599968" target="_blank"><i class="fas fa-map-marker-alt"></i></a>
     <p>Desarrolado por Daiana Caffiero - Derechos reservados @2021</p>
     </nav>
 </footer>

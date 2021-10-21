@@ -5,6 +5,7 @@
 }
 a{
     text-decoration: none;
+    text-justify: initial;
 }
 .container{
     background: url(../img/fondo1.jfif);
@@ -94,7 +95,16 @@ a{
         }
 
         .article3{
-            max-width: 30%;
+            width: 380px;
+            height: max-content;
+            object-fit: cover;
+            min-height: 80px;
+            min-width: 50px;
+            padding: 5px;
+            margin: 15px;
+            border: 5px solid white;
+            border-style:groove;
+            
         }
            /*  h1{
             color: white;
@@ -105,9 +115,10 @@ a{
         }
     h3{
         font-family:'Caveat', cursive;
-        font-size: 20px;
+        font-size: 24px;
         font-weight: normal;
     }
+
     .navegacion{
         background: rgba(80, 75, 75, 0.295);
         flex: 1 1 100%; 
@@ -168,6 +179,18 @@ i.far{
 i.far:hover{
     color:#343434;
 }
+
+i.fas{
+    color: white;
+    font-size: 1.5vw;
+    text-align: center;
+    margin: 4px;
+}
+i.fas:hover{
+    color:#343434;
+}
+
+
 
 @media all and (max-width: 800px){
         .section{
