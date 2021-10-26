@@ -8,7 +8,7 @@ a{
     text-justify: initial;
 }
 .container{
-    background: url(/TPO-Integrador-Codo-a-Codo/img/fondo1.jfif);
+    background: url(./img/fondo1.jfif);
     background-size: 100%;
     max-width: 100%;
     display: flex;
@@ -110,10 +110,7 @@ a{
             border-style:groove;
             
         }
-           /*  h1{
-            color: white;
-            font-family: 'Caveat', cursive;
-        } */
+           
             p{
             font-family: 'Caveat', cursive; 
         }
