@@ -8,7 +8,7 @@ a{
     text-justify: initial;
 }
 .container{
-    background: url(../img/fondo1.jfif);
+    background: url(/TPO-Integrador-Codo-a-Codo/img/fondo1.jfif);
     background-size: 100%;
     max-width: 100%;
     display: flex;
@@ -30,12 +30,16 @@ a{
     align-items: center;
     border-bottom: 3px solid rgba(255,255,255,.5);
 }
+.menu a:hover{
+    text-decoration: none;
+}
     .logo{
     flex: 1 1 auto;
 }
     .logo a{
+        font-family: 'Caveat', cursive;
         color: #fff;
-        font-size: 30px;
+        font-size: 20px;
     }
     .logo a:hover{
         color: #343434;
@@ -84,9 +88,9 @@ a{
             background: rgba(80, 75, 75, 0.295);
             color: white;
             font-family: 'Caveat', cursive;
-            font-size: 30px;
+            font-size: 22px;
         }
-
+  
         .article1{
             flex: 1 1 50%;
         }
@@ -191,7 +195,6 @@ i.fas:hover{
 }
 
 
-
 @media all and (max-width: 800px){
         .section{
             flex-direction: column;
@@ -207,7 +210,37 @@ i.fas:hover{
     }
 }
 @media all and (max-width: 400px){
+    body{
+        padding: 0px;
+    }
+    .container{
+        padding: 10px;
+    }
     .articulos{
         flex-direction: column;
     }
+    i.fab, i.far, i.fas{
+        font-size: 8vw;
+        margin: 0px;
+        padding: 0px;
+    }
+    .social{
+        display: none;
+    }
+    .nav{
+        flex-wrap: nowrap;
+        padding: 0px;
+        text-align: center;
+    }
+    .nav .texto{
+        display: none;
+    }
+    .navegacion{
+        display: none;
+       
+    }
+    .article3{
+        width: auto;
+        }
+
 }
