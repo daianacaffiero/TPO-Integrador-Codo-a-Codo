@@ -137,7 +137,7 @@ a{
 
     .header {
         color: #36A0FF;
-        font-size: 27px;
+        font-size: 30px;
         padding: 10px;
     }
     
@@ -164,7 +164,7 @@ a{
 
 i.fab{
     color: white;
-    font-size: 1.5vw;
+    font-size: 3vw;
     text-align: center;
     margin: 4px;
 }
@@ -173,7 +173,7 @@ i.fab:hover{
 }
 i.far{
     color: white;
-    font-size: 1.5vw;
+    font-size: 3vw;
     text-align: center;
     margin: 4px;
 }
@@ -183,7 +183,7 @@ i.far:hover{
 
 i.fas{
     color: white;
-    font-size: 1.5vw;
+    font-size: 3vw;
     text-align: center;
     margin: 4px;
 }
